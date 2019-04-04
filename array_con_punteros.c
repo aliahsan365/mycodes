@@ -7,7 +7,7 @@ int main() {
     
    int N[6] = {1,2,3,4,5,6};
    int *p;
-   p = N; // p contiene la direcion al primer elemento de N. N[0].
+   p = N; // p contiene la direccion al primer elemento de N. N[0].
  
  
    printf("normal\n");
@@ -20,8 +20,7 @@ int main() {
    for (int i = 0; i < n; ++i) {
 	   int *aux;
 	   aux = p + i;
-	    printf("%d\n",*aux);
-	   
+	   printf("%d\n",*aux);
 	   }	   
 	   
 	   
