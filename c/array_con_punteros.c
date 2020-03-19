@@ -7,7 +7,12 @@ int main() {
     
    int N[6] = {1,2,3,4,5,6};
    int *p;
-   p = N; // p contiene la direccion al primer elemento de N. N[0].
+   p = N; // la clave es  el puntero es hacia una variable, da bastente 
+   //igual si es un dato, o varios o struct etc..
+   // El tipo del puntero debe coincidir  si o si. Lo mismo que N[0]
+   
+   
+   
  
  
    printf("normal\n");
