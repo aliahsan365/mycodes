@@ -1,0 +1,2 @@
+no hay test
+hay que hacerlo sobre objeto cube y con textura spheremap
