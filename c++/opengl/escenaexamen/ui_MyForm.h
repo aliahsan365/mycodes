@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'MyForm.ui'
 **
-** Created by: Qt User Interface Compiler version 5.9.5
+** Created by: Qt User Interface Compiler version 5.12.8
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -10,12 +10,9 @@
 #define UI_MYFORM_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QDial>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QHeaderView>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QVBoxLayout>
@@ -37,12 +34,12 @@ public:
     void setupUi(QWidget *MyForm)
     {
         if (MyForm->objectName().isEmpty())
-            MyForm->setObjectName(QStringLiteral("MyForm"));
+            MyForm->setObjectName(QString::fromUtf8("MyForm"));
         MyForm->resize(819, 726);
         horizontalLayout = new QHBoxLayout(MyForm);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         widget = new MyGLWidget(MyForm);
-        widget->setObjectName(QStringLiteral("widget"));
+        widget->setObjectName(QString::fromUtf8("widget"));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -52,16 +49,16 @@ public:
         horizontalLayout->addWidget(widget);
 
         verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         dial = new QDial(MyForm);
-        dial->setObjectName(QStringLiteral("dial"));
+        dial->setObjectName(QString::fromUtf8("dial"));
         dial->setMaximum(359);
         dial->setValue(30);
 
         verticalLayout->addWidget(dial);
 
         verticalSlider = new QSlider(MyForm);
-        verticalSlider->setObjectName(QStringLiteral("verticalSlider"));
+        verticalSlider->setObjectName(QString::fromUtf8("verticalSlider"));
         verticalSlider->setMaximum(100);
         verticalSlider->setSingleStep(0);
         verticalSlider->setValue(100);
@@ -70,7 +67,7 @@ public:
         verticalLayout->addWidget(verticalSlider);
 
         pushButton = new QPushButton(MyForm);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
         QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -93,8 +90,8 @@ public:
 
     void retranslateUi(QWidget *MyForm)
     {
-        MyForm->setWindowTitle(QApplication::translate("MyForm", "Form", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("MyForm", "&Sortir", Q_NULLPTR));
+        MyForm->setWindowTitle(QApplication::translate("MyForm", "Form", nullptr));
+        pushButton->setText(QApplication::translate("MyForm", "&Sortir", nullptr));
     } // retranslateUi
 
 };
