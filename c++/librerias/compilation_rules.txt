@@ -1,0 +1,5 @@
+g++ main.cpp testclass.h
+
+el nombre del archivo y el de clase que contiene puede ser diferente
+en el main se pone entre comillas si es una clase agena a las que puedas encontrar en el compilador.
+
