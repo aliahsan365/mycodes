@@ -5,6 +5,9 @@ using namespace std;
 
 
 
+
+//bad desing example
+
 class Test {       
   public:             
     int type;        
