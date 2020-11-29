@@ -37,19 +37,12 @@ class Unit : Test {
 
 
 
-//compilation : 
+//compilation : g++ -std=c++17 -o myclass myclass.cpp 
+
 
 int main() {
 
 	Test t = Test();
 	Integration i = Integration();
 	Unit u = Unit();
-
-
-
-
-
-
-
-
 }
