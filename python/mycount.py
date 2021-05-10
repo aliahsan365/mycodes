@@ -27,7 +27,7 @@ def myinfinitecount(ini):
 def f(x): return x + 1
 def g(x): return 2 * x
 
-
+#devuelve la funcion h (compuesta f o g)
 def compose(f,g):
 
     h = lambda x: f(g(x))

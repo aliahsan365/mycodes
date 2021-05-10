@@ -69,7 +69,7 @@ void allsolutions(vector<int> &sol, int step, int limit, vector<vector<int>> &al
 	//step = depth 
 	if (step < limit) {	
 		for (int i = 0; i < limit; ++i) {
-			// sol[step], marcando la profuncidad
+			// sol[step], marcando la profuncdidad
 			sol[step] = i;
 			allsolutions(sol,step+1,limit,allsols);
 			}
@@ -90,8 +90,9 @@ int main() {
     vector<int> sol(n);
     vector<vector<int>> sols;
     allsolutions(sol,0,n,sols);
-    printsols(sols);
-    cout << "el numero de soluciones es " << int(sols.size()) << endl;
+    //printsols(sols);
+    //cout << "el numero de soluciones es " << int(sols.size()) << endl;
+    cout << int(sols.size()) << endl;
 }
  
 

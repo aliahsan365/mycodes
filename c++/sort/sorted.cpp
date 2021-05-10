@@ -89,6 +89,39 @@ class sorted {
     b = a;
   }
 
+
+  //pre: a  and b are ordered vector (incrisily)
+  static vector<int> merge(vector<int> &a, vector<int> &b) {
+    vector<int> c;
+
+    while (!a.empty() or !b.empty()) {
+      if (a[0] < b[0]) {
+        c.push_back(a[0]);
+        a.erase(a.begin()+0);
+      }
+      else {
+        c.push_back(b[0]);
+        b.erase(b.begin()+0);
+      }
+    }
+
+    //either a or b will be empty at this point
+
+    while (!a.empty()) {
+      c.push_back(a[0]);
+      a.erase(a.begin()+0);
+    }
+    
+
+    while (!b.empty()) {
+      c.push_back(b[0]);
+      b.erase(b.begin()+0);
+    }
+    return c;
+
+
+  }
+
 };
 
 
@@ -133,6 +166,12 @@ int main() {
   vector_print(v3);
   vector<int> res3 = sorted::my_insertion_sort(v3);
   vector_print(res3);
+
+  cout << "merge v2 v3" << endl;
+  vector<int> merged = sorted::merge(v2,v3);
+  vector_print(merged);
+
+
 
 
 

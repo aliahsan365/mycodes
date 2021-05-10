@@ -1,0 +1,8 @@
+gcc -c libmylib.c -o libmylib.o 
+
+ar rcs libmylib.a libmylib.o
+
+gcc -c driver.c -o driver.o
+
+gcc -o driver driver.o -L. -lmylib
+

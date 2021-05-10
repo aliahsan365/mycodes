@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+from arbresn import Tree as arbol
+import file
+
 
 #ex1
 def diffelements(llista):
