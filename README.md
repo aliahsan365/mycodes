@@ -1,2 +1,2 @@
 # mycodes
-my coding examples
+my code samples
