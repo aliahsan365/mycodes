@@ -13,23 +13,39 @@ int first_occurrence(double x, const vector<double>& v) {
 	int left,right;
 	left  = 0;
 	right = v.size();
-
-	while (left < right or right >= 0) {
+	while (left < right) {
+		if (right < 0) {
+			return -1;
+		}
 
 		int m =  (left + right) / 2;
+		
+		if (v[m] == x) {
+			
+			while (m >= 0) {
+				if (m == 0) {
+					return m;
+				}
+				if (v[m] == x) {
+					--m;
+				}
+				else {
+					return m+1;
+				}
 
-		if (v[m] == x) return m;
+			}
+			
+		}
 		
 		else if (v[m] > x) {
 			right = m - 1;
 		}
 		
 		else if (v[m] < x) {
-			left = m + 1;
+			left = m + 1;		
 		}
 	}
 	return -1;
-
 
 }
 
@@ -37,11 +53,11 @@ int first_occurrence(double x, const vector<double>& v) {
 
 int main() {
 
-	vector<double> v = {1,2,3,4,5,6,8,8,8,8,9};
+	vector<double> v = {1,2,3,4,5,6,7,8,8,8,8};
 
-	double x = 8;
+	double x = 1;
 
-	cout << first_occurrence(x,v) << endl;
+	cout << first_occurrence(x,v) + 1  << endl;
 
 
 }
