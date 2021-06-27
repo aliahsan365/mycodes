@@ -12,7 +12,6 @@ public:
     AddVal(int v)
     {
         val = v;
-        
     }
 
     void operator()(int &i)
@@ -38,10 +37,10 @@ int main()
     {
         cout << v[i] << endl;
     }
-    
-    cout <<  "using a functor " << endl;
+
+    cout << "using a functor " << endl;
     int x = 2;
-    
+
     for_each(v.begin(), v.end(), AddVal(x));
 
     for (int i = 0; i < v.size(); ++i)
